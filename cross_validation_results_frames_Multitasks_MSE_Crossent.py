@@ -4,7 +4,7 @@ import pandas as pd
 
 def folds_cross_validation(bottlenck, cross_validation , Folder_path):
     
-    df = pd.DataFrame(cross_validation)
+    
     
     file = Folder_path +'/'+bottlenck+ '/5foldresults.xlsx'
     # Create a Pandas Excel writer using XlsxWriter as the engine.
