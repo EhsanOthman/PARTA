@@ -6,12 +6,12 @@ def folds_cross_validation(bottlenck, cross_validation , Folder_path):
     
     
     
-    file = Folder_path +'/'+bottlenck+ '/5foldresults.xlsx'
+
     # Create a Pandas Excel writer using XlsxWriter as the engine.
     writer = pd.ExcelWriter(file, engine='xlsxwriter')
     
     # Convert the dataframe to an XlsxWriter Excel object.
-    df.to_excel(writer, sheet_name='Sheet1')
+    
     
     # Close the Pandas Excel writer and output the Excel file.
     writer.save()
